@@ -20,8 +20,8 @@ class Router
     private function getRoute() {
         $uri = $this->trimRoute();
 
-        $this->controller = $uri[0] !== null ? $uri[0] : self::DEFAULT_CONTROLLER;
-        $this->method = $uri[1] !== null ? $uri[1] : self::DEFAULT_ACTION;
+        $this->controller = (isset($uri[0]) && $uri[0] !== "") ? $uri[0] : self::DEFAULT_CONTROLLER;
+        $this->method = isset($uri[1]) ? $uri[1] : self::DEFAULT_ACTION;
         $this->params = array_slice($uri, 2);
     }
 
