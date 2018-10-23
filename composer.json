@@ -1,0 +1,10 @@
+{
+    "name": "soprop/bluepotato",
+    "description": "Blue potato awesome framework",
+    "type": "project",
+    "require": {
+        "twig/twig": "2",
+        "gabordemooij/redbean": "^5.1"
+    },
+    "license": "WTFPL"
+}

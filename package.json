@@ -1,0 +1,25 @@
+{
+  "name": "bluepotato_framework",
+  "version": "1.0.0",
+  "description": "Document de conception de framework MVC. Structure d'un environnement de base pour le développement d'une application qui répond à une architecture MVC.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SopRop/blue_potato.git"
+  },
+  "author": "SopRop QuentinB Leamundis",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/SopRop/blue_potato/issues"
+  },
+  "homepage": "https://github.com/SopRop/blue_potato#readme",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^4.0.0",
+    "grunt-sass": "^3.0.2"
+  }
+}
