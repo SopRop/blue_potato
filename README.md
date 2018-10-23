@@ -18,6 +18,7 @@ BLUE POTATOE FRAMEWORK
         - [VIEW](#view)
     - [Styles et JS](#styles-et-js)
     - [Database](#database)
+    - [Templating](#templating)
 
 <!-- /TOC -->
 
@@ -45,6 +46,8 @@ Checklist:
   - grunt-sass
 - Composer
   - gabordemooij/redbean
+  - twig/twig
+  - Autoload
 
 ## Directory structure
 
@@ -52,6 +55,7 @@ Checklist:
   - `Controller.php`: COntient les logiques de base des controlleurs
   - `Model.php`: Contient les logiques de base des Modèles
   - `View.php`: Contient les logiques de base pour charger les vues, interprêter les templates.
+  - `Router.php`: Logiques de routage
 - Controllers
   - Contient les controllers, suffixe `Controller.php`
   - Sous dossiers pour séparer les logiques (Correspondance vues)
@@ -142,3 +146,7 @@ Tâches grunt:
 Implémentation de [RedBeanPHP](https://www.redbeanphp.com/) pour s'occuper des données.
 
 DB: `mysql-server`.
+
+## Templating
+
+[Twig](https://twig.symfony.com/)
