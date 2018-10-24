@@ -3,14 +3,12 @@
 namespace Controller;
 
 use Core\Controller;
+use Core\View;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        echo 'Sample controller name: ' . self::class . ', sample method name: ' . __FUNCTION__;
-        echo '<br>';
-        echo 'Sample args print_r: ';
-        print_r(func_get_args());
+        View::twig('home.twig.html', [ "class" => self::class, "method" => __FUNCTION__, "args" => func_get_args()]);
     }
 }

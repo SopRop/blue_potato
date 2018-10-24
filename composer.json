@@ -4,14 +4,18 @@
     "type": "project",
     "require": {
         "twig/twig": "2",
-        "gabordemooij/redbean": "^5.1"
+        "gabordemooij/redbean": "^5.1",
+        "vlucas/phpdotenv": "^2.5"
     },
     "autoload": {
         "psr-4": {
             "Core\\": "./Core",
             "Controller\\": "./Controllers",
             "Model\\": "./Models"
-        }
+        },
+        "files": [
+            "./Core/Utils/Shortcuts.php"
+        ]
     },
     "license": "WTFPL"
 }
