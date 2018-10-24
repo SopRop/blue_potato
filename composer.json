@@ -12,7 +12,10 @@
             "Core\\": "./Core",
             "Controller\\": "./Controllers",
             "Model\\": "./Models"
-        }
+        },
+        "files": [
+            "./Core/Utils/Shortcuts.php"
+        ]
     },
     "license": "WTFPL"
 }
