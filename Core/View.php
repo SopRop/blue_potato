@@ -9,6 +9,6 @@ class View
         $loader = new Twig_Loader_Filesystem($_SERVER['DOCUMENT_ROOT']);
         $twig = new Twig_Environment($loader);
     
-        echo $twig->render($view, array('users' => $arg, 'title' => 'Salariers'));
+        echo $twig->render($view, $arg);
     }
 }
