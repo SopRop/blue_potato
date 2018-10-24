@@ -10,7 +10,8 @@
         "psr-4": {
             "Core\\": "./Core",
             "Controller\\": "./Controllers",
-            "Model\\": "./Models"
+            "Model\\": "./Models",
+            "Helper\\": "./Helpers"
         }
     },
     "license": "WTFPL"
