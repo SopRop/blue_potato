@@ -66,14 +66,7 @@ module.exports = function(grunt) {
     grunt.registerTask("default", ["dev", "watch"]);
     grunt.registerTask("dev", ["styles:css", "scripts:concat", "scripts:min"]);
 
-
-
     grunt.registerTask("scripts:concat", ["concat:dist"]);
     grunt.registerTask("scripts:min", ["uglify:dist"]);
     grunt.registerTask("styles:css", ["sass:dist"]);
-
-
-
-    // grunt.registerTask("styles:dev", ["sass:dist", "concat:dist", "uglify:dist"]);
-    // grunt.registerTask("notdev", ["uglify:dist"]);
 };
