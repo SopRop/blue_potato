@@ -1,5 +1,5 @@
 <?php
-namespace Helper;
+namespace Core;
 use \Twig_Loader_Filesystem;
 use \Twig_Environment;
 
