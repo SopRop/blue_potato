@@ -7,9 +7,12 @@ class Database
 {
     function __construct()
     {
+        $dbname = conf('DBNAME');
+        $dbuser = conf('DBUSER');
+        $dbpass = conf('DBPASS');
         if(!R::testConnection())
         {
-            $connexion = R::setup('mysql:host=localhost;dbname=' . $GLOBALS['config']['SGDBDatabase'], $GLOBALS['config']['SGDBUser'], $GLOBALS['config']['SGDBPass']);
+            $connexion = R::setup('mysql:host=localhost;dbname=' . $dbname, $dbuser, $dbpass);
         }
         // R::fancyDebug( TRUE );
         // $isConnected = R::testConnection();
