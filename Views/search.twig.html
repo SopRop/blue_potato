@@ -1,0 +1,14 @@
+{% extends "./layouts/base.html" %}
+{% block pageTitle %}Recherche{% endblock %}
+{% block content %}
+    <h1>Rechercher un salarié</h1>
+<form action="/worker/find" method="POST">
+    <label for="column">Colonne :</label>
+    <input type="text" name="column">
+
+    <label for="value">Donnée :</label>
+    <input type="text" name="value">
+    
+    <input type="submit" name="" id="">
+</form>
+{% endblock %}

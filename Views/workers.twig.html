@@ -1,0 +1,17 @@
+{% extends "./layouts/base.html" %}
+{% block pageTitle %}Salariés{% endblock %}
+{% block content %}
+    <h1>Salariés</h1>
+    <table>
+        <tr>
+            <th>Nom</th>
+            <th>Salaire</th>
+        </tr>
+        {% for worker in workers %}
+            <tr>
+                <td>{{ worker.name }}</td>
+                <td>{{ worker.pay }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
