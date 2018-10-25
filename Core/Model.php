@@ -1,6 +1,6 @@
 <?php
 namespace Core;
-use \Core\Access;
+use \Core\DBAccess;
 
 abstract class Model
 {
@@ -16,7 +16,7 @@ abstract class Model
     {
         $modelname = static::class;
         $model = new $modelname;
-        $access = new Access;
+        $access = new DBAccess;
         if (method_exists($access, $methodName)) {
             $args = array_merge([$model->table], $arg);
             var_dump($args);
