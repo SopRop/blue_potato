@@ -15,6 +15,8 @@
 - [Blue Potato](#blue-potato)
     - [Table des matières](#table-des-matières)
     - [Get Started](#get-started)
+        - [Requirements](#requirements)
+        - [Setup](#setup)
     - [Framework](#framework)
         - [Routing](#routing)
         - [Controllers](#controllers)
@@ -25,6 +27,23 @@
 <!-- /TOC -->
 
 ## Get Started
+
+### Requirements
+
+- Server
+  - php >=7.0
+    - php-mbstring
+    - composer
+      - Packages:
+        - Twig/Twig
+        - gabordemooij/redbean
+        - vlucas/dotenv
+  - mysql-server
+- Front
+  - Node >= 8
+    - Grunt >= 1.0.3
+
+### Setup
 
 __Clonez__ Blue Potato depuis le [repo github](https://github.com/SopRop/blue_potato)
 
@@ -40,12 +59,11 @@ Blue Potato utilise un système de routes automatiques en interprêtant l'url en
 
 ![route exemple](./res/route_example.png)
 
-
 ### Controllers
 
-Les controllers sont le nerfs du transit des données. Ils sont appelés via le premier segment de la route : `/Home` appelera `HomeController`. Le second segment de la route appellera la méthode du controller ci-choisi : `Home/Index` Appellera `Controller\HomeController->index()`.
+Les controllers sont le nerfs de la guerre. Ils sont appelés via le premier segment de la route : `/Home` appelera `HomeController`. Le second segment de la route appellera la méthode du controller ci-choisi : `Home/Index` Appellera `Controller\HomeController->index()`.
 
-Les controller héritent de `\Core\Controller`.
+Les controllers héritent de `\Core\Controller`.
 
 ![homecontroller example](./res/homecontroller_example.png)
 
@@ -59,7 +77,9 @@ Conventions:
 
 Les _model_ héritent de `\Core\Model`.
 
-Le nom du _model_ doit correspondre au nom de la table correspondante dans la base de données.
+Par défaut, le nom du _model_ correspond à une table éponyme dans la base de données.
+
+pour changer le nom de la table, ajouter un `protected $table = "table_name";` au _model_.
 
 ![model example](./res/model_example.png)
 
