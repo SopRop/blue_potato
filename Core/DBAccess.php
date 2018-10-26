@@ -4,7 +4,7 @@ namespace Core;
 
 use \RedBeanPHP\R;
 
-class Access extends Database
+class DBAccess extends Database
 {
     public function getAll($table)
     {
