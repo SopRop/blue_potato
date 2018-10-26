@@ -39,7 +39,7 @@ class Router
             $controller = new $controllerCallerString;
             call_user_func_array([$controller, $methodCallerString], $this->params );
         } else {
-            // TODO: Implement proper throw or 404 display
+            ErrorHandler::displayHttpErrorView('404');
         }
     }
 

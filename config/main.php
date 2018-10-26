@@ -12,4 +12,5 @@ return [
 
     // PATH
     'VIEW_PATH' => env('VIEW_PATH', './views'),
+    'VIEW_ERROR_PATH' => env('VIEW_ERROR_PATH', '/errors/')
 ];
