@@ -5,7 +5,7 @@ use \Core\DBAccess;
 abstract class Model
 {
     protected $table;
-
+  
     public function __construct()
     {
         $className = static::class;

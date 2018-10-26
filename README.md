@@ -2,6 +2,8 @@
 
 Document de conception de framework MVC. Structure d'un environnement de base pour le développement d'une application qui répond à une architecture MVC.
 
+[Documentation](./doc/index.md)
+
 BLUE POTATOE FRAMEWORK
 
 <!-- TOC -->
